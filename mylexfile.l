@@ -2,29 +2,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include "myfile.h"
 static bool check_triangle(int a, int b, int c);
 
 %}
 
 %%
-"kathetus_1"		{printf(" |First Kathetus| ");}
-"kathetus_2"		{printf(" |Second Kathetus| ");}
-"hypotenus"		{printf(" |Hypotenus| ");}
+"kathetus_1"		printf(" |FIRST KATHETUS| ");}
+"kathetus_2"		printf(" |SECOND KATHETUS| ");}
+"hypotenus"		printf(" |HYPOTENUS| ");}
 
 ".:.".*			{/* consume .:. -comment */}
 
-"int"			{printf(" |INTEGER| ");}
-"double"		{printf(" |DOUBLE| ");}
+"int"			{printf(" |INTEGER_TYPE| ");}
+"double"		{printf(" |DOUBLE_TYPE| ");}
 
 "true"			{printf(" |isTRUE| ");}
 "false"			{printf(" |isFALSE| ");}
 [0-9]*			{printf(" |INTEGER| ");}
+[0-9].\
 
-"$"			{printf(" |1.70 AZN| ");}
-";"			{printf(" |SEMICOLUMN| ");}
+";"			{printf(" |SEMICOLON| ");}
 "=="			{printf(" |isEQUAL| ");}
-"("			{printf(" |COLUMN OPENED| ");}
-")"			{printf(" |COLUMN CLOSED| ");}
+"("			{printf(" |PARANTHESIS OPENED| ");}
+")"			{printf(" |PARANTHESIS CLOSED| ");}
 "+"			{printf(" |PLUS| ");}
 "-"			{printf(" |MINUS| ");}
 "*"			{printf(" |MULTIPLY| ");}

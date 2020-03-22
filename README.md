@@ -6,6 +6,7 @@ Ilkin MAMMADZADA
 
 ## Syntax
 
+
 ## Explanations about the language
 - Takes a file with extension .pref
 - Has if, while, some methods
