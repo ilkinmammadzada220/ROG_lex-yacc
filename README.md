@@ -4,10 +4,6 @@
 
 Ilkin MAMMADZADA
 
-## Usage
-```bash
-makefile mylexfile
-
 ## Syntax
 
 ## Explanations about the language
