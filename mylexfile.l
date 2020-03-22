@@ -2,15 +2,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "myfile.h"
 static bool check_triangle(int a, int b, int c);
 
 %}
 
 %%
-"kathetus_1"		printf(" |FIRST KATHETUS| ");}
-"kathetus_2"		printf(" |SECOND KATHETUS| ");}
-"hypotenus"		printf(" |HYPOTENUS| ");}
+"kathetus_1"		{printf(" |FIRST KATHETUS| ");}
+"kathetus_2"		{printf(" |SECOND KATHETUS| ");}
+"hypotenus"		{printf(" |HYPOTENUS| ");}
 
 ".:.".*			{/* consume .:. -comment */}
 
