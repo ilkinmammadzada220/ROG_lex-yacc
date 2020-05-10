@@ -5,6 +5,7 @@
 Ilkin MAMMADZADA
 
 ## BNF
+```
  <primitive type> ::= <numeric type> | boolean
  <if then statement>::= if ( <expression> ) <statement>
  <while statement> ::= while ( <expression> ) <statement>
@@ -12,6 +13,7 @@ Ilkin MAMMADZADA
  <type name> ::= <identifier> | <package name> . <identifier>
  <digit> ::= 0 | <non zero digit>
  <boolean literal> ::= true | false
+ ```
 
 ## Explanations about the language
 - Takes a file with extension .pref
