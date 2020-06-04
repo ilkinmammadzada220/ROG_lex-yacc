@@ -14,6 +14,7 @@ void updateSymbolVal(char symbol, int val);
 %token NUM CHAR
 %token BOOL
 %token IF ELSE FOR WHILE
+%token AND OR
 %left G L GE LE E
 %left or and
 
@@ -24,7 +25,7 @@ void updateSymbolVal(char symbol, int val);
 
 line    : stmt';'				{;}
 		| exit_command ';'		{exit(EXIT_SUCCESS);}
-		| print exp ';'			{printf("Printing %d\n", $2);}
+		| printit exp ';'			{printf("Printing %d\n", $2);}
 		| line assignment ';'		{;}
 		| line print exp ';'		{printf("Printing %d\n", $3);}
 		| line exit_command ';'		{exit(EXIT_SUCCESS);}
