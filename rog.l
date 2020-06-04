@@ -45,3 +45,22 @@ int yywrap(void)
 {
 return 1;
 }
+
+
+static bool check_triangle(int a, int b, int c)
+{
+	int kats = a*a + b*b;
+	int hyp = c*c;
+	if(kats == hyp)
+	{
+	   return true;
+	}else{
+	   return false;
+	}
+}
+
+
+int main(){
+	yylex();
+	return 1;
+}
