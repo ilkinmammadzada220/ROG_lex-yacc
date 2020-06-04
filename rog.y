@@ -27,7 +27,7 @@ line    : stmt';'				{;}
 		| exit_command ';'		{exit(EXIT_SUCCESS);}
 		| printit exp ';'			{printf("Printing %d\n", $2);}
 		| line assignment ';'		{;}
-		| line print exp ';'		{printf("Printing %d\n", $3);}
+		| line printit exp ';'		{printf("Printing %d\n", $3);}
 		| line exit_command ';'		{exit(EXIT_SUCCESS);}
         ;
 stmt:
