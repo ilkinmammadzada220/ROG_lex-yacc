@@ -35,7 +35,6 @@ arithmetics	[+-/*=]
 "for"			{return FOR;}
 "switch"		{return SWITCH;}
 "case"			{return CASE;}
-{boolops}		{return yytext[0];}
 {numbers}		{return NUM;}
 {chars}			{return CHAR;}
 [ \t\n]+        ;       /* ignore whitespace */
